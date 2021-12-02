@@ -21,20 +21,20 @@ export default function SubmitSection() {
             <fieldset className="grid grid-cols-3 gap-3 pb-5">
               <div className="flex items-center justify-center">
                 <input name="artist" value="artist" type="radio" />
-                <label for="artist" className="font-bold ml-2">
+                <label htmlFor="artist" className="font-bold ml-2">
                   Artist
                 </label>
               </div>
               <div className="flex items-center justify-center">
                 <input name="collector" value="collector" type="radio" />
-                <label for="collector" className="font-bold ml-2">
+                <label htmlFor="collector" className="font-bold ml-2">
                   Collector
                 </label>
               </div>
 
               <div className="flex items-center justify-center">
                 <input name="investor" value="investor" type="radio" />
-                <label for="investor" className="font-bold ml-1.5">
+                <label htmlFor="investor" className="font-bold ml-1.5">
                   Investor
                 </label>
               </div>

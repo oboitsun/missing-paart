@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 export default function OverviewTab({ brief, date }) {
   return (
     <div className="mt-5">
@@ -24,9 +24,9 @@ export default function OverviewTab({ brief, date }) {
       <p className="font-medium">
         {" "}
         In collaboration with{" "}
-        <a className="text-[#5050FF] underline font-bold" href="/">
-          SaveArtSpace
-        </a>
+        <Link href="https://somewhere.com">
+          <a className="text-[#5050FF] underline font-bold"> SaveArtSpace</a>
+        </Link>
       </p>
       <img className="my-5 w-20" src="/assets/sas.png" alt="Save Art Space" />
       <button className="droid text-white tracking-tighter text-xl py-3 lg:py-4 border border-black w-full bg-black hover:text-black hover:bg-white transition-all">

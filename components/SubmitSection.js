@@ -4,18 +4,18 @@ export default function SubmitSection() {
   return (
     <div className="bg-[#85AEC9] px-5 pt-12 pb-10 w-full">
       <div className=" max-w-[1200px] w-full mx-auto grid grid-cols-1 lg:grid-cols-2">
-        <div className="w-full max-w-[480px] justify-self-start self-center">
+        <div className="w-full lg:max-w-[480px] justify-self-start self-center">
           <p className="droid tracking-tighter text-[32px] lg:text-[46px] text-center lg:text-left leading-none lg:pb-5">
             <span className="text-white ">Your ticket</span> into the emerging NFT space
           </p>
-          <p className="text-white pt-2 max-w-[450px]">
+          <p className="text-white pt-2 lg:max-w-[450px]">
             Looking to learn more about the NFT space or to stay involved in all things
             related to The Missing Paart?
             <br className="hidden lg:block" />
             <span className="text-black font-bold">Sign up to our mailing list</span>
           </p>
         </div>
-        <div className="pt-14 lg:pt-0 max-w-[360px] justify-self-end">
+        <div className="pt-14 lg:pt-0 lg:max-w-[360px] justify-self-end w-full">
           <p className="text-[22px] droid tracking-tighter text-center">Who are you?</p>
           <form>
             <fieldset className="grid grid-cols-3 gap-3 pb-5">

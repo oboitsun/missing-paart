@@ -36,13 +36,13 @@ export default function EventSlide() {
           alt="slide "
         />
         <img
-          className="hidden lg:block w-full object-cover"
+          className="hidden lg:block w-full h-full object-cover"
           src="/assets/slide-pic-desk.jpg"
           alt="slide "
         />
       </div>
       <div className="w-full lg:col-start-1 lg:row-start-1 lg:pl-16 pt-16 pb-5">
-        <p className="text-lg font-bold pb-2.5">DEC | 2 - 4 | 2021 </p>
+        <p className="hidden text-lg font-bold pb-2.5">DEC | 2 - 4 | 2021 </p>
         <p className="hidden lg:block droid  tracking-tighter text-[40px] leading-none pb-3">
           Art Basel Miami Beach
         </p>

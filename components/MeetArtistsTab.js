@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 export default function MeetArtistsTab() {
   const artists = [
     {
@@ -32,18 +32,20 @@ export default function MeetArtistsTab() {
             <p className="font-bold">{art.name}</p>
             <div className="flex items-center gap-2">
               {art?.website && (
-                <a className="text-xs underline font-bold" href={art.website}>
-                  Website
-                </a>
+                <Link href={art.website}>
+                  <a className="text-xs underline font-bold">Website</a>
+                </Link>
               )}
               {art?.insta && (
-                <a href={art.insta} className="w-4">
-                  <img
-                    className="filter invert"
-                    src="/assets/insta.svg"
-                    alt="Artist instagram"
-                  />
-                </a>
+                <Link href={art.insta}>
+                  <a className="w-4">
+                    <img
+                      className="filter invert"
+                      src="/assets/insta.svg"
+                      alt="Artist instagram"
+                    />
+                  </a>
+                </Link>
               )}
             </div>
           </div>

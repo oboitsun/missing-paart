@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 export default function ScheduleTab() {
   const schedule = [
     {
@@ -8,17 +8,17 @@ export default function ScheduleTab() {
       brief: (
         <p className="">
           Cocktails and panel discussion on the future of NFTs with{" "}
-          <a className="text-[#5050FF] underline font-bold" href="/">
-            Justin Aversano
-          </a>{" "}
+          <Link href="https://somewhere.com">
+            <a className="text-[#5050FF] underline font-bold"> Justin Aversano</a>
+          </Link>{" "}
           ,{" "}
-          <a className="text-[#5050FF] underline font-bold" href="/">
-            WhIsBy
-          </a>
+          <Link href="https://somewhere.com">
+            <a className="text-[#5050FF] underline font-bold"> WhIsBy</a>
+          </Link>
           , and{" "}
-          <a className="text-[#5050FF] underline font-bold" href="/">
-            Benzi
-          </a>
+          <Link href="https://somewhere.com">
+            <a className="text-[#5050FF] underline font-bold"> Benzi</a>
+          </Link>
         </p>
       ),
     },

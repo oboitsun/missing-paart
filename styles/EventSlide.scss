@@ -1,0 +1,69 @@
+.EventSlide {
+  &__tabs {
+    width: 100%;
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(max-content, 1fr));
+    border-bottom: 6px solid #e6e6e6;
+    .tab {
+      padding: 0 4px;
+      position: relative;
+      color: black;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 12px;
+      opacity: 0.4;
+      transition: all 0.3s;
+      &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: -6px;
+        height: 6px;
+        width: 0%;
+        background: #67a9d5;
+        transition: width 0.3s;
+      }
+      &:hover {
+        opacity: 1;
+        color: black;
+      }
+      &.active {
+        opacity: 1;
+
+        &::after {
+          width: 100%;
+          background: #67a9d5;
+        }
+      }
+      &.toLeft {
+        &::after {
+          float: right;
+          left: unset;
+          right: 0;
+        }
+      }
+      &.toRight {
+        &::after {
+          float: left;
+          left: 0;
+          right: unset;
+        }
+      }
+      &.active.toRight {
+        &::after {
+          float: right;
+          left: unset;
+          right: 0;
+        }
+      }
+      &.active.toLeft {
+        &::after {
+          float: left;
+          left: 0;
+          right: unset;
+        }
+      }
+    }
+  }
+}

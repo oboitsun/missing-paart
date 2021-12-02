@@ -6,12 +6,14 @@ import NewEvent from "./NewEvent";
 
 export default function HeroSection() {
   return (
-    <div className="px-2.5 flex flex-col items-center pt-12 pb-10 w-full xl:pb-20">
-      <Logo />
-      <Heading addClasses="pt-5 pb-8 lg:py-10">
-        Digital gallieries <br className="lg:hidden" /> in physical spaces
-      </Heading>
-      <div className="w-full pb-[56.25%] lg:pb-[25%] 2xl:pb-[36%]  relative max-h-[690px] overflow-hidden mb-2.5">
+    <div className="px-2.5  items-center pt-12 pb-10 w-full xl:pb-20 h-screen flex flex-col justify-between">
+      <div className="flex flex-col items-center flex-shrink-0">
+        <Logo />
+        <Heading addClasses="pt-5 pb-8 lg:py-10">
+          Digital gallieries <br className="lg:hidden" /> in physical spaces
+        </Heading>
+      </div>
+      <div className="w-full h-2/3 flex flex-grow max-h-[690px] overflow-hidden  relative">
         <Image
           layout="fill"
           //   width={1890}
@@ -30,7 +32,9 @@ export default function HeroSection() {
           alt="video"
         /> */}
       </div>
-      <NewEvent />
+      <div className="flex-shrink-0 w-full pt-2.5">
+        <NewEvent />
+      </div>
     </div>
   );
 }

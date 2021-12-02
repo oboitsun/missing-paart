@@ -22,7 +22,7 @@ export default function UpcomingEventSection() {
           <img src="/assets/arrow.svg" alt="previous slide" />
         </div>
       </div> */}
-      <div className="w-full relative overflow-hidden bg-white slider-shadow border border-gray-300 p-2.5 pt-4 lg:p-0 lg:mt-14">
+      <div className="w-full relative overflow-hidden bg-white slider-shadow border border-gray-300 p-2.5 pt-4 mt-10 lg:p-0 lg:mt-14">
         <EventsSilder />
       </div>
       {/* <div className="hidden relative w-full mb-5  mt-8 h-10 lg:flex justify-center gap-20 items-center">

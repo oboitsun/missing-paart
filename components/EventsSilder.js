@@ -16,7 +16,7 @@ export default function EventsSilder() {
     <Swiper
       allowTouchMove={false}
       slidesPerView={1}
-      loop={true}
+      // loop={true}
       navigation={{ nextEl: "#swiper-next", prevEl: "#swiper-prev" }}
       className="mySwiper"
     >

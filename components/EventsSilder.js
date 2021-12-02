@@ -14,6 +14,7 @@ SwiperCore.use([Navigation]);
 export default function EventsSilder() {
   return (
     <Swiper
+      allowTouchMove={false}
       slidesPerView={1}
       loop={true}
       navigation={{ nextEl: "#swiper-next", prevEl: "#swiper-prev" }}

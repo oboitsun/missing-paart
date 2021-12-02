@@ -23,6 +23,27 @@ export default function MeetArtistsTab() {
       about:
         "Contemporary artist WhIsBe has established a formidable reputation in both the renegade world of street art but also the mainstream art world encompassing the museum, gallery and arena of public installations.",
     },
+    {
+      name: "Justin Aversano",
+      website: "https://somesite.com",
+      insta: "https://instagram.com",
+      about:
+        "Justin Aversano is an artist and curator working within the New York City and Los Angeles art scene. He has organized a number of shows in NYC and LA, as well as public art exhibitions around the country.",
+    },
+    {
+      name: "Benzi",
+      website: "https://somesite.com",
+      insta: "https://instagram.com",
+      about:
+        "In their whole, Kirell’s creations can be articulated and deciphered following an array of tones, shapes, dots, and lines staged according to the nature of the data.",
+    },
+    {
+      name: "WhisBy",
+      website: "https://somesite.com",
+      insta: "https://instagram.com",
+      about:
+        "Contemporary artist WhIsBe has established a formidable reputation in both the renegade world of street art but also the mainstream art world encompassing the museum, gallery and arena of public installations.",
+    },
   ];
   return (
     <div className="mt-9">

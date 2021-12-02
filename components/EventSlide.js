@@ -20,11 +20,11 @@ export default function EventSlide() {
     setCurrentTab(i);
   };
   return (
-    <div className="lg:grid lg:grid-cols-2 w-full gap-3 lg:gap-10">
+    <div className="lg:grid lg:grid-cols-2 w-full gap-3 lg:gap-10 lg:max-h-[676px] h-full">
       <p className="lg:hidden droid text-center tracking-tighter text-[22px] leading-none pb-3">
         Art Basel Miami Beach
       </p>
-      <div className="  w-full relative lg col-start-2 lg:row-start-1  ">
+      <div className="  w-full relative lg col-start-2 lg:row-start-1  h-full">
         <img
           className="absolute w-1/6 h-auto bottom-2.5 right-2.5"
           src="/assets/art-basel.png"
@@ -41,12 +41,14 @@ export default function EventSlide() {
           alt="slide "
         />
       </div>
-      <div className="w-full lg:col-start-1 lg:row-start-1 lg:pl-16 pt-16 pb-5">
-        <p className="hidden text-lg font-bold pb-2.5">DEC | 2 - 4 | 2021 </p>
-        <p className="hidden lg:block droid  tracking-tighter text-[40px] leading-none pb-3">
+      <div className="w-full lg:col-start-1 lg:row-start-1 lg:pl-16 pt-16 pb-5 max-h-[676px]  flex flex-col">
+        <p className="hidden lg:block text-lg font-bold pb-2.5 flex-shrink-0">
+          DEC | 2 - 4 | 2021{" "}
+        </p>
+        <p className="hidden lg:block droid  tracking-tighter text-[40px] leading-none pb-3 flex-shrink-0">
           Art Basel Miami Beach
         </p>
-        <div className="EventSlide__tabs">
+        <div className="EventSlide__tabs ">
           {tabsNames.map((tab, i) => (
             <button
               onClick={() => {
@@ -59,7 +61,9 @@ export default function EventSlide() {
             </button>
           ))}
         </div>
-        <div className="HeroSectionTabs__currentTab">{tabs[currentTab]}</div>
+        <div className="HeroSectionTabs__currentTab  overflow-y-auto  h-[calc(100%-8px)] my-2">
+          {tabs[currentTab]}
+        </div>
       </div>
     </div>
   );

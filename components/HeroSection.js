@@ -11,7 +11,7 @@ export default function HeroSection() {
       <Heading addClasses="pt-5 pb-8 lg:py-10">
         Digital gallieries <br className="lg:hidden" /> in physical spaces
       </Heading>
-      <div className="w-full h-[75vw] relative max-h-[690px] overflow-hidden mb-2.5">
+      <div className="w-full pb-[56.25%] lg:pb-[25%] 2xl:pb-[36%]  relative max-h-[690px] overflow-hidden mb-2.5">
         <Image
           layout="fill"
           //   width={1890}
@@ -21,6 +21,14 @@ export default function HeroSection() {
           src="/assets/main-bg.jpg"
           alt="main"
         />
+        {/* <video
+          autoPlay={true}
+          loop={true}
+          muted={true}
+          src="/assets/video.mp4"
+          className="w-full h-full top-1/2 left-1/2 absolute -translate-x-1/2 -translate-y-1/2"
+          alt="video"
+        /> */}
       </div>
       <NewEvent />
     </div>
